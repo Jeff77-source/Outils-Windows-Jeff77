@@ -26,7 +26,45 @@ li::before { content: "✔"; position: absolute; left: 0; color: #28a745; font-w
 .final-rating { background: linear-gradient(135deg,#0078D4,#005a9e); color: white; padding: 40px; border-radius: 12px; text-align: center; margin-top: 50px; }
 .final-rating .stars { font-size: 32px; color: #ffd700; }
 .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eaecef; text-align: center; font-size: 0.9em; color: #666; }
-.opinion { font-style: italic; color: #1e4b7b; margin-top: 4px; margin-bottom: 12px; }
+
+/* Bulles d’avis */
+.opinion {
+    font-style: italic;
+    color: #1e4b7b;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    background-color: #e6f2ff; /* fond bleu pâle */
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #c8e1ff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* ombre légère */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* animation fluide au hover */
+    position: relative;
+}
+.opinion:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icône 💬 avec animation */
+.opinion::before {
+    content: "💬 ";
+    color: #1e90ff;
+    margin-right: 4px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.opinion:hover::before {
+    animation: bounce 0.4s ease;
+}
+
+/* Animation bounce */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.opinion strong { font-style: normal; color: #0078D4; margin-right: 4px; }
 </style>
 </head>
 <body>
@@ -41,48 +79,48 @@ Solution portable, sécurisée et optimisée pour garder un système rapide et s
 <h2>💻 Points forts</h2>
 <ul>
 <li>100% portable - aucune installation requise
-  <div class="opinion">Très pratique pour dépannage rapide sans laisser de traces sur le système.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Très pratique pour dépannage rapide sans laisser de traces sur le système.</div>
 </li>
 <li>Interface simple et accessible aux débutants
-  <div class="opinion">Rend l'outil utilisable par tous, même sans connaissances techniques avancées.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Rend l'outil utilisable par tous, même sans connaissances techniques avancées.</div>
 </li>
 <li>Compatible Windows 10 & 11
-  <div class="opinion">Assure une large compatibilité et une longévité du logiciel.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Assure une large compatibilité et une longévité du logiciel.</div>
 </li>
 <li>Contrôle avancé des mises à jour
-  <div class="opinion">Permet de garder le système à jour tout en évitant les mises à jour indésirables.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Permet de garder le système à jour tout en évitant les mises à jour indésirables.</div>
 </li>
 <li>Immunisation des périphériques USB
-  <div class="opinion">Très utile pour prévenir les infections via clés USB, un vrai plus pour la sécurité.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Très utile pour prévenir les infections via clés USB, un vrai plus pour la sécurité.</div>
 </li>
 <li>Sauvegarde complète profils & données
-  <div class="opinion">Garantit la sécurité des données en cas de panne ou de migration.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Garantit la sécurité des données en cas de panne ou de migration.</div>
 </li>
 </ul>
 
 <h2>🛡️ Sécurité et UEFI</h2>
 <ul>
 <li>Vérification et gestion Secure Boot
-  <div class="opinion">Indispensable pour protéger le démarrage du système contre les logiciels malveillants.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Indispensable pour protéger le démarrage du système contre les logiciels malveillants.</div>
 </li>
 <li>Audit UEFI automatique
-  <div class="opinion">Facilite la détection de vulnérabilités et la configuration sécurisée du BIOS/UEFI.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Facilite la détection de vulnérabilités et la configuration sécurisée du BIOS/UEFI.</div>
 </li>
 <li>Détection mot de passe BIOS/UEFI
-  <div class="opinion">Pratique pour les administrateurs, mais attention à l'usage responsable.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Pratique pour les administrateurs, mais attention à l'usage responsable.</div>
 </li>
 </ul>
 
 <h2>🆕 Dernières nouveautés</h2>
 <ul>
 <li>Menu contextuel outils rapides
-  <div class="opinion">Accélère l'accès aux fonctions les plus utilisées, très ergonomique.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Accélère l'accès aux fonctions les plus utilisées, très ergonomique.</div>
 </li>
 <li>Optimisation automatique système et réseau
-  <div class="opinion">Idéal pour maintenir performance et stabilité sans effort manuel.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Idéal pour maintenir performance et stabilité sans effort manuel.</div>
 </li>
 <li>Migration Windows 11 simplifiée
-  <div class="opinion">Réduit les risques et la complexité lors de la mise à niveau vers Windows 11.</div>
+  <div class="opinion"><strong>Avis ChatGPT :</strong> Réduit les risques et la complexité lors de la mise à niveau vers Windows 11.</div>
 </li>
 </ul>
 
@@ -90,7 +128,7 @@ Solution portable, sécurisée et optimisée pour garder un système rapide et s
 <div class="rating-box">
 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 <strong>Note Technique : 4.7 / 5</strong>
-<p>Architecture modulaire cohérente. Bonne intégration des fonctions de sécurité (Secure Boot et UEFI). Centralisation efficace des outils de maintenance. Un mode expert plus configurable pourrait encore améliorer l’expérience pour les administrateurs IT.</p>
+<p>Architecture modulaire cohérente. Bonne intégration des fonctions de sécurité (Secure Boot et UEFI). Centralisation efficace des outils de maintenance.</p>
 </div>
 
 <h2>🚀 Évaluation Marketing</h2>
