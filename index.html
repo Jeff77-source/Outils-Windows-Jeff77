@@ -3,280 +3,269 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Outils Windows Jeff77</title>
+<title>Outils Windows Jeff77 - V44.0.0.0</title>
 
 <style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-    line-height: 1.6;
-    color: #24292e;
-    background-color: #fdfdfd;
-}
-h1 {
-    color: #0078D4;
-    text-align: center;
-    border-bottom: 3px solid #eaecef;
-    padding-bottom: 20px;
-    font-size: 2.2rem;
-}
-h2 {
-    color: #0366d6;
-    margin-top: 45px;
-    border-bottom: 1px solid #eaecef;
-    padding-bottom: 10px;
-    font-size: 1.6rem;
-}
-.intro-box {
-    background: #f6f8fa;
-    border-left: 6px solid #0078D4;
-    border-radius: 10px;
-    padding: 25px 20px;
-    margin: 25px 0;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
-}
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 15px;
-}
-li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #28a745;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-.rating-box {
-    background: #f0f6ff;
-    border: 1px solid #c8e1ff;
-    border-radius: 12px;
-    padding: 30px 25px;
-    margin: 25px 0;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.05);
-}
-.stars {
-    font-size: 28px;
-    color: #e3b341;
-    letter-spacing: 3px;
-    margin-bottom: 8px;
-}
-.final-rating {
-    background: linear-gradient(135deg,#0078D4,#005a9e);
-    color: white;
-    padding: 45px;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-.final-rating .stars {
-    font-size: 36px;
-    color: #ffd700;
-}
-.final-rating .sub-notes {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #fffacd;
-    font-weight: bold;
-}
-.footer {
-    margin-top: 70px;
-    padding-top: 25px;
-    border-top: 1px solid #eaecef;
-    text-align: center;
-    font-size: 0.9em;
-    color: #666;
-}
-.opinion {
-    font-style: italic;
-    color: #1e4b7b;
-    margin-top: 6px;
-    margin-bottom: 15px;
-    background-color: #e6f2ff;
-    padding: 12px 18px;
-    border-radius: 10px;
-    border: 1px solid #c8e1ff;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.opinion:hover {
-    transform: translateY(-4px);
-    box-shadow: 4px 6px 14px rgba(0,0,0,0.12);
-}
-a.button {
-    display: inline-block;
-    padding: 14px 26px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    position: relative;
-}
-a.button:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-}
-a.button span.icon {
-    display: inline-block;
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-}
-a.button:hover span.icon {
-    transform: translateX(6px) rotate(10deg);
-}
-.cert-button {
-    background: linear-gradient(135deg,#28a745,#1e7e34);
-}
-.essai-button {
-    background: linear-gradient(135deg,#0078D4,#005a9e);
+:root {
+    --blue:#0078D4;
+    --dark:#201f1e;
+    --gold:#FFD700;
+    --gold-dark:#b8860b;
+    --bg:#f0f2f5;
 }
 
-/* ANIMATION BOUNCE POUR LE CERTIFICAT */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-8px); }
-    60% { transform: translateY(-4px); }
-}
-.bounce {
-    animation: bounce 2s infinite;
+*{box-sizing:border-box;}
+
+body{
+    font-family:"Segoe UI",Tahoma,sans-serif;
+    background:var(--bg);
+    margin:0;
+    padding:10px;
+    line-height:1.5;
 }
 
-/* ANIMATION SUBTILE POUR VERSION D’ESSAI */
-@keyframes gentlePop {
-    0% { transform: scale(1) translateX(0); }
-    50% { transform: scale(1.02) translateX(2px); }
-    100% { transform: scale(1) translateX(0); }
-}
-.gentle {
-    animation: gentlePop 2s infinite;
+.wrapper{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.08);
 }
 
-/* ANIMATION SCINTILLEMENT INITIAL CERTIFICAT */
-@keyframes glow {
-    0% { box-shadow: 0 0 0px #1e7e34; }
-    50% { box-shadow: 0 0 18px #28a745; }
-    100% { box-shadow: 0 0 0px #1e7e34; }
+/* HEADER */
+header{
+    text-align:center;
+    border-bottom:4px solid var(--blue);
+    padding-bottom:15px;
+    margin-bottom:25px;
 }
-.glow-once {
-    animation: glow 2s ease-in-out 1;
+
+h1{
+    color:var(--blue);
+    font-size:clamp(1.6rem,4vw,2.5rem);
+    margin:0;
+}
+
+.tagline{
+    font-weight:bold;
+    color:#555;
+    margin-top:5px;
+}
+
+.version-badge{
+    margin-top:10px;
+    font-weight:bold;
+    color:#0a5ea8;
+}
+
+/* GRID RESPONSIVE */
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid #e5e5e5;
+    border-top:5px solid var(--blue);
+    border-radius:10px;
+    padding:20px;
+    background:#fff;
+}
+
+h2{
+    font-size:1.2rem;
+    color:var(--blue);
+    margin-top:0;
+}
+
+.tool-title{
+    font-weight:bold;
+    display:block;
+    margin-top:10px;
+}
+
+.tool-txt{
+    font-size:0.9rem;
+    color:#555;
+    margin-top:4px;
+}
+
+/* DOWNLOAD SECTION */
+.trial-section{
+    margin:40px 0;
+    padding:20px;
+    border:2px solid var(--blue);
+    border-radius:12px;
+    text-align:center;
+}
+
+.trial-section h3{
+    margin-top:0;
+    color:var(--blue);
+}
+
+.btn{
+    display:block;
+    width:100%;
+    max-width:400px;
+    margin:10px auto;
+    padding:15px;
+    border-radius:8px;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    transition:0.2s;
+}
+
+.btn-cert{
+    background:#00a8ff;
+    color:#fff;
+}
+
+.btn-trial{
+    background:#00ff88;
+    color:#004d2c;
+    text-transform:uppercase;
+}
+
+.btn-gold{
+    background:linear-gradient(135deg,#ffd700,#d4af37,#b8860b);
+    color:#000;
+    padding:18px;
+    border-radius:10px;
+    font-weight:900;
+    text-decoration:none;
+    display:block;
+    max-width:450px;
+    margin:30px auto;
+    text-align:center;
+}
+
+/* VERDICT */
+.verdict{
+    background:#f0f7ff;
+    border:3px solid var(--blue);
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    margin-top:40px;
+}
+
+.big-stars{
+    font-size:3rem;
+    color:var(--gold);
+}
+
+.score{
+    font-size:2rem;
+    font-weight:bold;
+    color:var(--blue);
+}
+
+.footer{
+    text-align:center;
+    font-size:0.85rem;
+    margin-top:30px;
+    color:#777;
 }
 </style>
 </head>
+
 <body>
+<div class="wrapper">
 
-<h1>🛠️ Outils Windows Jeff77 : L'Ultime Boîte à Outils Système</h1>
+<header>
+<h1>🛠️ Outils Windows Jeff</h1>
+<p class="tagline">Le Couteau Suisse Windows 10 & 11</p>
+<p class="version-badge">Version Actuelle : V44.0.0.0 • 100% Portable • Certificat officiel Jeff77 • RSA 2048-bit • Valide 10 ans</p>
+</header>
 
-<div class="intro-box">
-<strong>Le Couteau Suisse Windows 10 & 11</strong><br>
-Solution portable, sécurisée et optimisée pour garder un système rapide et sous contrôle.
-</div>
+<div class="feature-grid">
 
-<!-- BOUTON INSTALLATEUR CERTIFICAT EN HAUT AVEC BOUNCE + SCINTILLEMENT -->
-<div class="intro-box" style="border-left:6px solid #28a745; background:#f0fff4; text-align:center;">
-<strong>🔐 Étape recommandée :</strong><br>
-Installez une fois pour toutes le certificat Jeff77 afin d’exécuter tous ses logiciels en toute sécurité.<br><br>
-<a id="certBtn" href="https://www.jeff77.fr/_files/archives/096619_745ce804536e4d2e90ebb32f62cf967e.zip?dn=Installateur%20Certificat%20Jeff77.zip" class="button cert-button bounce">
-🚀 Télécharger l’installateur automatique du certificat <span class="icon">➡️</span>
-</a>
-</div>
-
-<!-- VERSION ESSAI AVEC ANIMATION SUBTILE -->
-<div class="intro-box" style="text-align:center;">
-<strong>Version d’essai limitée</strong><br>
-Modules partiellement restreints — version complète réservée aux membres Gold.<br><br>
-<a href="https://www.jeff77.fr/_files/archives/096619_0a99fa08b02245cdaa1269334ca180a5.zip?dn=Essai%20Outils%20Windows.zip" class="button essai-button gentle">
-📥 Télécharger la version d’essai <span class="icon">➡️</span>
-</a>
-</div>
-
-<!-- CONTENU COMPLET RESTANT ... -->
-<h2>💻 Points Forts</h2>
-<ul>
-<li>100% Portable<div class="opinion"><strong>Avis :</strong> Aucune installation requise, peut être utilisé partout.</div></li>
-<li>STOP Versions<div class="opinion"><strong>Avis :</strong> Bloque les mises à jour forcées de Windows, contrôle total sur les versions.</div></li>
-<li>Immunisation supports USB<div class="opinion"><strong>Avis :</strong> Protège toutes les clés et périphériques USB contre virus et malwares.</div></li>
-<li>Optimisation système & réseau<div class="opinion"><strong>Avis :</strong> Maintien de performances et stabilité sans effort manuel.</div></li>
-</ul>
-
-<h2>💾 Sauvegarde & Restauration Complète</h2>
-<ul>
-<li>Profils Navigateurs Internet<div class="opinion"><strong>Avis :</strong> Sauvegarde favoris, mots de passe, extensions et configurations.</div></li>
-<li>Profil Thunderbird<div class="opinion"><strong>Avis :</strong> Sécurise emails, comptes et paramètres.</div></li>
-<li>Documents personnels<div class="opinion"><strong>Avis :</strong> Protection totale des données critiques.</div></li>
-<li>Photos, Musiques, Vidéos<div class="opinion"><strong>Avis :</strong> Préserve tous les contenus multimédias.</div></li>
-<li>Bureau & Téléchargements<div class="opinion"><strong>Avis :</strong> Restaurations rapides de l’environnement utilisateur.</div></li>
-</ul>
-
-<h2>🖱️ Menu Contextuel Avancé</h2>
-<ul>
-<li>Changer Mode d’alimentation (Équilibré, Économie, Performances Optimales)<div class="opinion"><strong>Avis :</strong> Adaptation immédiate des performances selon les besoins.</div></li>
-<li>Options d’alimentation<div class="opinion"><strong>Avis :</strong> Accès direct aux paramètres avancés.</div></li>
-<li>Vider presse-papier<div class="opinion"><strong>Avis :</strong> Renforce confidentialité.</div></li>
-<li>Coupure WiFi urgente<div class="opinion"><strong>Avis :</strong> Isolement immédiat en cas de menace réseau.</div></li>
-<li>Capture écran<div class="opinion"><strong>Avis :</strong> Simplifie l’assistance et documentation.</div></li>
-<li>Mode Dieu<div class="opinion"><strong>Avis :</strong> Centralise tous les paramètres Windows en un seul menu.</div></li>
-<li>Gestion icônes bureau<div class="opinion"><strong>Avis :</strong> Organisation rapide et personnalisée du bureau.</div></li>
-<li>Panneau de configuration<div class="opinion"><strong>Avis :</strong> Accès direct aux réglages classiques.</div></li>
-</ul>
-
+<div class="card">
 <h2>🛡️ Sécurité, UEFI & Secure Boot 2023</h2>
-<ul>
-<li>Vérification & gestion Secure Boot<div class="opinion"><strong>Avis :</strong> Vérifie la validité des certificats UEFI 2023, bloque les logiciels non autorisés.</div></li>
-<li>Audit automatique UEFI<div class="opinion"><strong>Avis :</strong> Analyse firmware, détecte certificats manquants ou expirés, conforme aux normes 2023.</div></li>
-<li>Détection mot de passe BIOS/UEFI<div class="opinion"><strong>Avis :</strong> Utile pour administrateurs IT, sécurité renforcée.</div></li>
-<li>Installation automatique certificat Jeff77<div class="opinion"><strong>Avis :</strong> Certificat valide 10 ans pour Secure Boot et UEFI 2023, garantissant l’exécution sécurisée des outils Jeff77.</div></li>
-</ul>
+<span class="tool-title">Installation automatique Certificat Jeff77 (V44)</span>
+<span class="tool-txt">Suppression des alertes SmartScreen et validation officielle éditeur.</span>
 
-<h2>🔬 Dernières nouveautés</h2>
-<ul>
-<li>Menu contextuel outils rapides<div class="opinion"><strong>Avis :</strong> Accélère l'accès aux fonctions les plus utilisées.</div></li>
-<li>Migration Windows 11 simplifiée<div class="opinion"><strong>Avis :</strong> Réduit risques et complexité lors de la mise à niveau.</div></li>
-<li>Optimisation automatique système et réseau<div class="opinion"><strong>Avis :</strong> Performance et stabilité améliorées.</div></li>
-</ul>
+<span class="tool-title">Secure Boot 2023</span>
+<span class="tool-txt">Vérification & gestion Secure Boot • Audit UEFI automatique • Détection mot de passe BIOS bloquant • Installation certificats Secure Boot 2023.</span>
 
-<h2>🔬 Évaluations</h2>
-<div class="rating-box">
-<div class="stars">★★★★★</div>
-<strong>Technique : 4.9 / 5</strong><br>
-<strong>Marketing : 5.0 / 5</strong>
+<span class="tool-title">Protection avancée</span>
+<span class="tool-txt">Détection BlackLotus • Audit NVRAM • Contrôle sécurité firmware.</span>
 </div>
 
-<div class="rating-box">
-📖 Tutoriel manuel certificat :<br>
-<a href="https://www.jeff77.fr/certificats-de-confiance" target="_blank">
-https://www.jeff77.fr/certificats-de-confiance
+<div class="card">
+<h2>⚡ Optimisation & Contrôle Système</h2>
+<span class="tool-title">Optimisation automatique système & réseau</span>
+<span class="tool-txt">Nettoyage, Winsock reset, Flush DNS, optimisation performances.</span>
+
+<span class="tool-title">STOP VERSIONS</span>
+<span class="tool-txt">Blocage mises à jour forcées Windows.</span>
+
+<span class="tool-title">Immunisation USB</span>
+<span class="tool-txt">Protection contre infections via supports externes.</span>
+
+<span class="tool-title">Migration Windows 11 simplifiée</span>
+<span class="tool-txt">Compatibilité TPM / Secure Boot validée automatiquement.</span>
+</div>
+
+<div class="card">
+<h2>🖱️ Menu Contextuel Outils Rapides</h2>
+<span class="tool-txt">
+Mode d’alimentation (Équilibré / Économie / Performances Optimales)<br>
+Options d’alimentation<br>
+Vider presse-papier<br>
+Coupure WiFi urgente<br>
+Capture écran & vidéo<br>
+Mode Dieu (God Mode)<br>
+Gestion icônes bureau<br>
+Panneau de configuration
+</span>
+</div>
+
+<div class="card">
+<h2>💾 Sauvegarde & Restauration Complète</h2>
+<span class="tool-txt">
+Profils Chrome, Brave, Edge<br>
+Profil Thunderbird<br>
+Documents personnels<br>
+Photos, Musiques, Vidéos<br>
+Bureau & Téléchargements
+</span>
+</div>
+
+</div>
+
+<div class="trial-section">
+<h3>🚀 Zone de Téléchargement</h3>
+<p>V44 automatise l'installation du certificat.<br>
+Bouton disponible pour utilisateurs non Gold.</p>
+
+<a href="https://www.jeff77.fr/_files/archives/096619_745ce804536e4d2e90ebb32f62cf967e.zip?dn=Installateur%20Certificat%20Jeff77.zip" class="btn btn-cert">
+🛡️ Installer le Certificat de Confiance Jeff77
+</a>
+
+<a href="https://www.jeff77.fr/_files/archives/096619_0a99fa08b02245cdaa1269334ca180a5.zip?dn=Essai%20Outils%20Windows.zip" class="btn btn-trial">
+⬇️ Télécharger Version d’Essai V43.0.0.9
 </a>
 </div>
 
-<div class="final-rating">
-<div class="sub-notes">Technique : 4.9 / 5 | Marketing : 5.0 / 5</div>
-<div class="stars">★★★★★</div>
-<h3>5.0 / 5 — Excellent et fortement recommandé</h3>
+<div class="verdict">
+<div class="big-stars">★★★★★</div>
+<div class="score">20 / 20</div>
+<p>Évaluation Finale : Suite ultra complète, portable, sécurisée et optimisée pour Windows 10 & 11.</p>
 </div>
+
+<a href="https://www.jeff77.fr/soutenir" class="btn-gold">
+🏆 DEVENIR MEMBRE GOLD – ACCÈS V44
+</a>
 
 <div class="footer">
-© 2026 Outils Windows Jeff77 — Maintenance et Optimisation Windows
+© 2026 Jeff77 Tech • Solution 100% Portable & Signée Numériquement
 </div>
 
-<script>
-// Ajout de la classe glow-once pour la première animation du certificat
-window.addEventListener('load', () => {
-    const certBtn = document.getElementById('certBtn');
-    certBtn.classList.add('glow-once');
-});
-</script>
-
+</div>
 </body>
 </html>
