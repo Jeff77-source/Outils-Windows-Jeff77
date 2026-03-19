@@ -161,14 +161,55 @@ color:#777;
 <body>
 <div class="wrapper">
 
-<header style="text-align: center;">
+<style>
+    /* Style pour le wrapper pour tout centrer */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre horizontalement tous les enfants */
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 20px;
+        margin-bottom: 10px; /* Espace réduit sous le titre */
+        font-size: 2.8em;
+    }
+
+    .header-logo {
+        display: block;
+        /* margin: auto n'est plus nécessaire ici grâce au flexbox sur le wrapper */
+        width: 200px;            /* TAILLE AGRANDIE : Ajustez cette valeur (ex: 250px) si besoin */
+        height: auto;            /* Garde les proportions de l'image */
+        margin-bottom: 15px;      /* Espace sous l'image avant le slogan */
+        border-radius: 8px;      /* Optionnel : coins légèrement arrondis */
+    }
+
+    .tagline {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .version {
+        font-size: 0.9em;
+        opacity: 0.8;
+    }
+</style>
+
+<body>
+<div class="wrapper">
+
+<header>
+    <h1>Outils Windows</h1>
+
     <img src="https://static.wixstatic.com/media/096619_cfbad2fcbb654893a35e1865d4b5febf~mv2.jpg/v1/fill/w_560,h_562,al_c,lg_1,q_80,enc_avif,quality_auto/Logo%20Outils%20Windows.jpg" 
          alt="Logo Outils Windows" 
-         style="display: block; margin: 0 auto 15px auto; width: 120px; height: auto;">
+         class="header-logo">
 
-    <h1>Outils Windows</h1>
-    <p class="tagline" style="margin-top: 5px; font-weight: bold;">Le Couteau Suisse Informatique</p>
-    <p class="version" style="font-size: 0.9em; opacity: 0.8;">
+    <p class="tagline">Le Couteau Suisse Informatique</p>
+    <p class="version">
         Version actuelle : V44.0.0.5<br>
         100% Portable • Certificat officiel Jeff77 • RSA 2048-bit • Valide 10 ans
     </p>
