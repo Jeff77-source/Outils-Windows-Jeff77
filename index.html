@@ -31,6 +31,9 @@ background:#fff;
 padding:20px;
 border-radius:12px;
 box-shadow:0 8px 30px rgba(0,0,0,0.08);
+display: flex;
+flex-direction: column;
+align-items: center; /* Centre les éléments enfants du wrapper */
 }
 
 header{
@@ -38,23 +41,39 @@ text-align:center;
 border-bottom:4px solid var(--blue);
 padding-bottom:15px;
 margin-bottom:25px;
+width: 100%; /* S'assure que le header prend toute la largeur */
 }
 
 h1{
-margin:0;
-font-size:clamp(1.6rem,4vw,2.4rem);
+margin:20px 0 10px 0;
+font-size:clamp(1.6rem,4vw,2.8rem);
 color:var(--blue);
+text-align: center;
+}
+
+.header-logo {
+display: block;
+margin: 0 auto 15px auto; /* CENTRE L'IMAGE PARFAITEMENT */
+width: 250px; /* Taille agrandie comme demandé */
+height: auto;
+border-radius: 8px;
 }
 
 .tagline{
 font-weight:bold;
-margin-top:6px;
+margin-top:0;
+margin-bottom: 20px;
+font-size: 1.2em;
+text-align: center;
 }
 
 .version{
 margin-top:10px;
 font-weight:bold;
 color:#0a5ea8;
+font-size: 0.9em;
+opacity: 0.8;
+text-align: center;
 }
 
 .highlight-cert{
@@ -64,12 +83,16 @@ padding:12px;
 margin-top:15px;
 font-size:0.95rem;
 font-weight:500;
+text-align: left; /* Garde le texte des infos à gauche pour la lecture */
+width: 100%;
 }
 
 .feature-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
+width: 100%;
+margin-top: 20px;
 }
 
 .card{
@@ -78,6 +101,7 @@ border-top:5px solid var(--blue);
 border-radius:10px;
 padding:18px;
 background:#fff;
+text-align: left;
 }
 
 h2{
@@ -95,7 +119,6 @@ margin-top:8px;
 }
 
 /* Boutons */
-
 .btn{
 display:block;
 width:100%;
@@ -136,6 +159,7 @@ border:3px solid var(--blue);
 border-radius:15px;
 text-align:center;
 background:#f0f7ff;
+width: 100%;
 }
 
 .stars{
@@ -154,49 +178,10 @@ text-align:center;
 margin-top:30px;
 font-size:0.85rem;
 color:#777;
+width: 100%;
 }
 </style>
 </head>
-
-<body>
-<div class="wrapper">
-
-<style>
-    /* Style pour le wrapper pour tout centrer */
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centre horizontalement tous les enfants */
-        text-align: center;
-    }
-
-    header h1 {
-        margin-top: 20px;
-        margin-bottom: 10px; /* Espace réduit sous le titre */
-        font-size: 2.8em;
-    }
-
-    .header-logo {
-        display: block;
-        /* margin: auto n'est plus nécessaire ici grâce au flexbox sur le wrapper */
-        width: 200px;            /* TAILLE AGRANDIE : Ajustez cette valeur (ex: 250px) si besoin */
-        height: auto;            /* Garde les proportions de l'image */
-        margin-bottom: 15px;      /* Espace sous l'image avant le slogan */
-        border-radius: 8px;      /* Optionnel : coins légèrement arrondis */
-    }
-
-    .tagline {
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-
-    .version {
-        font-size: 0.9em;
-        opacity: 0.8;
-    }
-</style>
 
 <body>
 <div class="wrapper">
@@ -225,15 +210,13 @@ color:#777;
 
 ✔ Amélioration des modules de nettoyage : actions plus précises et mieux adaptées aux antivirus<br>
 ✔ Installation automatique de la dernière version de Windows Terminal si nécessaire<br>
-✔ Refonte complète du module "Changer de version de Windows"<br>
+✔ Refonte complète du module "Changer de version de Windows" <br>
 ✔ Suppression optimisée du dossier Windows.Old lors du nettoyage du PC<br>
 ✔ Automatisation renforcée de plusieurs modules de maintenance système<br>
 ✔ Ajout d’un raccourci Explorateur sur le Bureau (configuration rapide Windows)<br>
 ✔ Réactivation de l’affichage des secondes dans l’heure de la barre des tâches sous Windows 10 LTSC<br>
 ✔ Popup d'information automatique en fin d’analyses et réparations SFC / DISM
 </div>
-
-</header>
 
 <div class="feature-grid">
 
@@ -306,7 +289,7 @@ Bureau & Téléchargements
 
 </div>
 
-<div style="margin-top:40px;text-align:center;">
+<div style="margin-top:40px;text-align:center;width:100%;">
 <h2>🚀 Zone de Téléchargement</h2>
 
 <div class="highlight-cert">
