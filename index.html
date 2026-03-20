@@ -33,7 +33,7 @@ border-radius:12px;
 box-shadow:0 8px 30px rgba(0,0,0,0.08);
 display: flex;
 flex-direction: column;
-align-items: center; /* Centre les éléments enfants du wrapper */
+align-items: center;
 }
 
 header{
@@ -41,7 +41,7 @@ text-align:center;
 border-bottom:4px solid var(--blue);
 padding-bottom:15px;
 margin-bottom:25px;
-width: 100%; /* S'assure que le header prend toute la largeur */
+width: 100%;
 }
 
 h1{
@@ -51,17 +51,23 @@ color:var(--blue);
 text-align: center;
 }
 
+/* Correction de la zone de clic du logo */
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto 15px auto;
+}
+
 .header-logo {
 display: block;
-margin: 0 auto 15px auto; /* CENTRE L'IMAGE PARFAITEMENT */
-width: 250px; /* Taille agrandie comme demandé */
+width: 250px;
 height: auto;
 border-radius: 8px;
-transition: opacity 0.2s;
+transition: transform 0.2s;
 }
 
 .header-logo:hover {
-opacity: 0.9;
+    transform: scale(1.02);
 }
 
 .tagline{
@@ -88,7 +94,7 @@ padding:12px;
 margin-top:15px;
 font-size:0.95rem;
 font-weight:500;
-text-align: left; /* Garde le texte des infos à gauche pour la lecture */
+text-align: left;
 width: 100%;
 }
 
@@ -187,9 +193,9 @@ width: 100%;
 }
 
 .footer a {
-color: var(--blue);
-text-decoration: none;
-font-weight: bold;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -200,7 +206,7 @@ font-weight: bold;
 <header>
     <h1>Outils Windows</h1>
 
-    <a href="https://www.jeff77.fr/" target="_blank">
+    <a href="https://www.jeff77.fr/" target="_blank" class="logo-link">
         <img src="https://static.wixstatic.com/media/096619_cfbad2fcbb654893a35e1865d4b5febf~mv2.jpg/v1/fill/w_560,h_562,al_c,lg_1,q_80,enc_avif,quality_auto/Logo%20Outils%20Windows.jpg" 
              alt="Logo Outils Windows" 
              class="header-logo">
@@ -332,8 +338,8 @@ Le téléchargement manuel ci-dessous est proposé uniquement pour les utilisate
 </a>
 
 <div class="footer">
-<p>© 2026 Jeff77 Tech • Solution portable signée numériquement</p>
-<p><a href="https://www.jeff77.fr/" target="_blank">Visiter le site officiel : www.jeff77.fr</a></p>
+    <p>© 2026 Jeff77 Tech • Solution portable signée numériquement</p>
+    <p><a href="https://www.jeff77.fr/" target="_blank">Visiter le site officiel : www.jeff77.fr</a></p>
 </div>
 
 </div>
