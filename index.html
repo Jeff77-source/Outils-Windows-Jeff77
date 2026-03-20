@@ -184,18 +184,31 @@ font-weight:bold;
 color:var(--blue);
 }
 
-.footer{
-text-align:center;
-margin-top:30px;
-font-size:0.85rem;
-color:#777;
-width: 100%;
+.footer-site-link {
+    margin: 25px 0;
+    font-size: 1.1rem;
 }
 
-.footer a {
+.footer-site-link a {
     color: var(--blue);
     text-decoration: none;
     font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.footer-site-link a:hover {
+    border-bottom: 2px solid var(--blue);
+}
+
+.footer{
+text-align:center;
+margin-top:10px;
+padding-top: 20px;
+font-size:0.85rem;
+color:#777;
+width: 100%;
+border-top: 1px solid #eee;
 }
 </style>
 </head>
@@ -337,9 +350,12 @@ Le téléchargement manuel ci-dessous est proposé uniquement pour les utilisate
 🏆 DEVENIR MEMBRE GOLD – ACCÈS V44
 </a>
 
+<div class="footer-site-link">
+    <a href="https://www.jeff77.fr/" target="_blank">🌐 Accéder au site officiel : www.jeff77.fr</a>
+</div>
+
 <div class="footer">
-    <p>© 2026 Jeff77 Tech • Solution portable signée numériquement</p>
-    <p><a href="https://www.jeff77.fr/" target="_blank">Visiter le site officiel : www.jeff77.fr</a></p>
+© 2026 Jeff77 Tech • Solution portable signée numériquement
 </div>
 
 </div>
