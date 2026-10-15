@@ -4,8 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Outils Windows Jeff77 - V50.0.0.3</title>
-
+<title>Outils Windows Jeff77 - V50.0.0.4</title>
 <style>
 :root{
 --blue:#0078D4;
@@ -13,9 +12,7 @@
 --gold-dark:#b8860b;
 --bg:#f0f2f5;
 }
-
 *{box-sizing:border-box;}
-
 body{
 margin:0;
 padding:12px;
@@ -24,7 +21,6 @@ font-family:"Segoe UI",Tahoma,sans-serif;
 line-height:1.5;
 color:#333;
 }
-
 .wrapper{
 max-width:1200px;
 margin:auto;
@@ -32,69 +28,60 @@ background:#fff;
 padding:20px;
 border-radius:12px;
 box-shadow:0 8px 30px rgba(0,0,0,0.08);
-display: flex;
-flex-direction: column;
-align-items: center;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
-
 header{
 text-align:center;
 border-bottom:4px solid var(--blue);
 padding-bottom:15px;
 margin-bottom:25px;
-width: 100%;
+width:100%;
 }
-
 h1{
 margin:20px 0 10px 0;
 font-size:clamp(1.6rem,4vw,2.8rem);
 color:var(--blue);
-text-align: center;
+text-align:center;
 }
-
-.logo-link {
-    display: inline-block;
-    text-decoration: none;
-    margin: 0 auto 15px auto;
+.logo-link{
+display:inline-block;
+text-decoration:none;
+margin:0 auto 15px auto;
 }
-
-.header-logo {
-display: block;
-width: 250px;
-height: auto;
-border-radius: 8px;
-transition: transform 0.2s;
+.header-logo{
+display:block;
+width:250px;
+height:auto;
+border-radius:8px;
+transition:transform 0.2s;
 }
-
-.header-logo:hover {
-    transform: scale(1.02);
+.header-logo:hover{
+transform:scale(1.02);
 }
-
 .tagline{
 font-weight:bold;
 margin-top:0;
-margin-bottom: 20px;
-font-size: 1.2em;
-text-align: center;
+margin-bottom:20px;
+font-size:1.2em;
+text-align:center;
 }
-
 .version{
 margin-top:10px;
 font-weight:bold;
 color:#0a5ea8;
-font-size: 0.9em;
-opacity: 0.8;
-text-align: center;
+font-size:0.9em;
+opacity:0.8;
+text-align:center;
 }
-
-.version-date {
-    display: block;
-    font-size: 0.85rem;
-    color: #444;
-    margin-top: 4px;
-    font-weight: normal;
+.version-date{
+display:block;
+font-size:0.85rem;
+color:#444;
+margin-top:4px;
+font-weight:normal;
 }
-
 .highlight-cert{
 background:#e8f3ff;
 border-left:5px solid var(--blue);
@@ -102,33 +89,29 @@ padding:12px;
 margin-top:15px;
 font-size:0.95rem;
 font-weight:500;
-text-align: left;
-width: 100%;
+text-align:left;
+width:100%;
 }
-
 .feature-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
-width: 100%;
-margin-top: 20px;
+width:100%;
+margin-top:20px;
 }
-
 .card{
 border:1px solid #e5e5e5;
 border-top:5px solid var(--blue);
 border-radius:10px;
 padding:18px;
 background:#fff;
-text-align: left;
+text-align:left;
 }
-
 h2{
 margin-top:0;
 font-size:1.2rem;
 color:#0078D4;
 }
-
 .avis{
 font-size:0.85rem;
 background:#f0f7ff;
@@ -136,7 +119,6 @@ padding:8px;
 border-left:3px solid var(--blue);
 margin-top:8px;
 }
-
 /* Boutons */
 .btn{
 display:block;
@@ -150,13 +132,11 @@ text-decoration:none;
 font-weight:bold;
 transition:0.2s;
 }
-
 .btn-trial{
 background:#00ff88;
 color:#004d2c;
 text-transform:uppercase;
 }
-
 .btn-gold{
 background:linear-gradient(135deg,#ffd700,#d4af37,#b8860b);
 color:#000;
@@ -165,7 +145,6 @@ font-size:1.05rem;
 border-radius:10px;
 font-weight:900;
 }
-
 .verdict{
 margin-top:15px;
 padding:25px;
@@ -173,104 +152,96 @@ border:3px solid var(--blue);
 border-radius:15px;
 text-align:center;
 background:#f0f7ff;
-width: 100%;
+width:100%;
 }
-
 .stars{
 font-size:2.8rem;
 color:var(--gold);
 }
-
 .score{
 font-size:2rem;
 font-weight:bold;
 color:#0078D4;
 }
-
-.footer-site-link {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    text-align: center;
+.footer-site-link{
+margin:10px 0;
+font-size:1.1rem;
+text-align:center;
 }
-
-.footer-site-link a {
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
-    transition: 0.2s;
+.footer-site-link a{
+color:var(--blue);
+text-decoration:none;
+font-weight:bold;
+border-bottom:2px solid transparent;
+transition:0.2s;
 }
-
-.footer-site-link a:hover {
-    border-bottom: 2px solid var(--blue);
+.footer-site-link a:hover{
+border-bottom:2px solid var(--blue);
 }
-
 .footer{
 text-align:center;
 margin-top:10px;
-padding-top: 20px;
+padding-top:20px;
 font-size:0.85rem;
 color:#777;
-width: 100%;
-border-top: 1px solid #eee;
+width:100%;
+border-top:1px solid #eee;
 }
 </style>
 </head>
-
 <body>
 <div class="wrapper">
-
 <header>
-    <h1>Outils Windows</h1>
-
-    <a href="https://www.jeff77.fr/" target="_blank" class="logo-link">
-        <img src="https://static.wixstatic.com/media/096619_d2954daca1524f0087adab8eecda415d~mv2.png/v1/fill/w_580,h_580,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%2026H2.png" 
-             alt="Logo Outils Windows" 
-             class="header-logo">
-    </a>
-
-    <p class="tagline">Le Couteau Suisse Informatique</p>
-    <div class="version">
-        Version actuelle : <b>V50.0.0.3</b> (Membres Gold)
-        <span class="version-date">Dernière mise à jour : 12 Octobre 2026</span>
-        Version d'essai (bridée): V50.0.0.1 <span style="color: #444; font-weight: normal;">(29 Septembre 2026)</span><br>
-        100% Portable • Certificat officiel Jeff77 • RSA 2048-bit • Valide 10 ans
-    </div>
-</header>
-
-<div class="highlight-cert">
-    🚀 <b>Nouveautés Majeures V50.0.0.3 (Gold) :</b><br>
-    ✅ <b>Nouveau Module de Gestion des Pilotes (exclusivement Gold) :</b> Recherche des Mises à Jour des Pilotes via Windows Update, Visualisation des Pilotes Installés via Windows Update et Nettoyage des Pilotes Obsolètes.<br>
-    ✅ Améliorations diverses de stabilité et d'optimisation pour la version Gold.<br>
-    ✅ Intégration des différents popups manquants sous un Windows "Famille" (popup de Détection Automatique de Batterie, et popups d'Informations Diverses dans différents Modules).<br>
-    ✅ Intégration du nouveau logo officiel "Outils Windows".<br>
-    ✅ Ajout de la prise en charge complète de "Windows 11 26H2" dans le module "STOP VERSIONS".<br>
-    ✅ Modification des Couleurs par Défaut dans le module "Couleurs Interface" (Fond Bleu Clair et Texte Blanc).<br>
-    ✅ Durées de validité : <b>120 Jours</b> pour les Membres Gold / <b>90 Jours</b> pour la Version d'Essai.<br>
-    <br>
-    ✅ <b>Développement Rigoureux & Sécurité :</b> Les Outils Windows de Jeff77 sont analysés et validés en collaboration directe avec les experts en cybersécurité du laboratoire <b>Kaspersky</b>.<br>
-    ✅ <b>Transparence Totale :</b> Vous pouvez vérifier l'intégrité des outils en temps réel sur la plateforme officielle <a href="https://opentip.kaspersky.com/" target="_blank">Kaspersky OpenTip</a>.<br>
-    ✅ <b>Engagement Qualité :</b> Chaque version est signée numériquement pour garantir son authenticité et sa sécurité. 🔑<br>
-    <br>
-    <b>Change Log :</b><br>
-    • <b>V50.0.0.3 - 12 Octobre 2026 (Gold uniquement) :</b> Ajout du Module de Gestion des Pilotes, intégrant la Recherche des MAJ des Pilotes via Windows Update, la Visualisation des Pilotes Installés via Windows Update et le Nettoyage des Pilotes Obsolètes.<br>
-    • <b>V50.0.0.2 - 1er Octobre 2026 (Gold) :</b> Améliorations diverses et optimisations de la version Gold.<br>
-    • <b>V50.0.0.1 - 29 Septembre 2026 :</b> Intégration des différents popups manquants sous un Windows "Famille" (popup de Détection Automatique de Batterie, et popups d'Informations Diverses dans différents Modules) et Améliorations Diverses.<br>
-    • <b>V50.0.0.0 - 21 Septembre 2026 :</b> Nouveau logo officiel, ajout "Windows 11 26H2" dans le module "STOP VERSIONS" et modification des couleurs par défaut (Fond Bleu Clair / Texte Blanc).<br>
-    • <b>V49.0.0.9 - 16 Septembre 2026 :</b> Ajout "Modifier la Résolution de l'écran" et "Résolution Actuelle" dans le module "Cartes Vidéos" du menu Matériel Installé.<br>
-    • <b>V49.0.0.8 - 12 Septembre 2026 :</b> Améliorations Diverses.<br>
-    • <b>V49.0.0.7 - 12 Septembre 2026 :</b> Correction d'un éventuel blocage de Winget sur Windows 10.<br>
-    • <b>V49.0.0.6 - 10 Septembre 2026 :</b> Calcul automatique de la Capacité Maximale Autorisée par Barrette RAM et avertissement visuel.<br>
-    • <b>V49.0.0.5 - 9 Septembre 2026 :</b> Ajout d'informations supplémentaires dans les détails des Disques branchés.<br>
-    • <b>V48.0.0.0 à V49.0.0.4 :</b> Mises à jour diverses, migration globale suite au retrait de WMIC.<br>
-    • <b>V47.0.0.0 à V47.0.0.9 :</b> Ajout du Scan Réseau Rapide/Approfondi et de l'environnement sécurisé.<br>
-    • <b>V46.0.0.8 à V46.0.0.9 :</b> Amélioration de la détection d'usure de la batterie et audit/optimisation Windows Defender.
+<h1>Outils Windows</h1>
+<a href="https://www.jeff77.fr/" target="_blank" class="logo-link">
+<img src="https://static.wixstatic.com/media/096619_d2954daca1524f0087adab8eecda415d~mv2.png/v1/fill/w_580,h_580,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%2026H2.png"
+alt="Logo Outils Windows"
+class="header-logo">
+</a>
+<p class="tagline">Le Couteau Suisse Informatique</p>
+<div class="version">
+Version actuelle : <b>V50.0.0.4</b> (Membres Gold)
+<span class="version-date">Dernière mise à jour : 16 Octobre 2026</span>
+Version d'essai (bridée): V50.0.0.4 <span style="color:#444;font-weight:normal;">(16 Octobre 2026)</span><br>
+100% Portable • Certificat officiel Jeff77 • RSA 2048-bit • Valide 10 ans
 </div>
-
+</header>
+<div class="highlight-cert">
+🚀 <b>Nouveautés V50.0.0.4 (Gold et Essai) :</b><br>
+✅ <b>Mise à Jour des Logiciels (Winget) :</b> Correction d'un risque de faux positif provoquant l'affichage injustifié du message « Accès refusé ».<br>
+✅ <b>Détection Automatique de Batterie :</b> Optimisation de la détection de présence d'une batterie pour éviter certains blocages ou ralentissements.<br>
+<br>
+🚀 <b>Fonctionnalités introduites en V50.0.0.3 (Gold uniquement) :</b><br>
+✅ <b>Nouveau Module de Gestion des Pilotes (exclusivement Gold) :</b> Recherche des Mises à Jour des Pilotes via Windows Update, Visualisation des Pilotes Installés via Windows Update et Nettoyage des Pilotes Obsolètes.<br>
+✅ Améliorations diverses de stabilité et d'optimisation pour la version Gold.<br>
+✅ Intégration des différents popups manquants sous un Windows "Famille" (popup de Détection Automatique de Batterie, et popups d'Informations Diverses dans différents Modules).<br>
+✅ Intégration du nouveau logo officiel "Outils Windows".<br>
+✅ Ajout de la prise en charge complète de "Windows 11 26H2" dans le module "STOP VERSIONS".<br>
+✅ Modification des Couleurs par Défaut dans le module "Couleurs Interface" (Fond Bleu Clair et Texte Blanc).<br>
+✅ Durées de validité : <b>120 Jours</b> pour les Membres Gold / <b>90 Jours</b> pour la Version d'Essai.<br>
+<br>
+✅ <b>Développement Rigoureux & Sécurité :</b> Les Outils Windows de Jeff77 sont analysés et validés en collaboration directe avec les experts en cybersécurité du laboratoire <b>Kaspersky</b>.<br>
+✅ <b>Transparence Totale :</b> Vous pouvez vérifier l'intégrité des outils en temps réel sur la plateforme officielle <a href="https://opentip.kaspersky.com/" target="_blank">Kaspersky OpenTip</a>.<br>
+✅ <b>Engagement Qualité :</b> Chaque version est signée numériquement pour garantir son authenticité et sa sécurité. 🔑<br>
+<br>
+<b>Change Log :</b><br>
+• <b>V50.0.0.4 - 16 Octobre 2026 (Gold et Essai) :</b> Correction d'un risque de faux positif provoquant l'affichage injustifié du message « Accès refusé » dans le module de Mise à Jour des Logiciels. Optimisation de la détection de présence d'une batterie pour éviter certains blocages ou ralentissements.<br>
+• <b>V50.0.0.3 - 12 Octobre 2026 (Gold uniquement) :</b> Ajout du Module de Gestion des Pilotes, intégrant la Recherche des MAJ des Pilotes via Windows Update, la Visualisation des Pilotes Installés via Windows Update et le Nettoyage des Pilotes Obsolètes.<br>
+• <b>V50.0.0.2 - 1er Octobre 2026 (Gold) :</b> Améliorations diverses et optimisations de la version Gold.<br>
+• <b>V50.0.0.1 - 29 Septembre 2026 :</b> Intégration des différents popups manquants sous un Windows "Famille" (popup de Détection Automatique de Batterie, et popups d'Informations Diverses dans différents Modules) et Améliorations Diverses.<br>
+• <b>V50.0.0.0 - 21 Septembre 2026 :</b> Nouveau logo officiel, ajout "Windows 11 26H2" dans le module "STOP VERSIONS" et modification des couleurs par défaut (Fond Bleu Clair / Texte Blanc).<br>
+• <b>V49.0.0.9 - 16 Septembre 2026 :</b> Ajout "Modifier la Résolution de l'écran" et "Résolution Actuelle" dans le module "Cartes Vidéos" du menu Matériel Installé.<br>
+• <b>V49.0.0.8 - 12 Septembre 2026 :</b> Améliorations Diverses.<br>
+• <b>V49.0.0.7 - 12 Septembre 2026 :</b> Correction d'un éventuel blocage de Winget sur Windows 10.<br>
+• <b>V49.0.0.6 - 10 Septembre 2026 :</b> Calcul automatique de la Capacité Maximale Autorisée par Barrette RAM et avertissement visuel.<br>
+• <b>V49.0.0.5 - 9 Septembre 2026 :</b> Ajout d'informations supplémentaires dans les détails des Disques branchés.<br>
+• <b>V48.0.0.0 à V49.0.0.4 :</b> Mises à jour diverses, migration globale suite au retrait de WMIC.<br>
+• <b>V47.0.0.0 à V47.0.0.9 :</b> Ajout du Scan Réseau Rapide/Approfondi et de l'environnement sécurisé.<br>
+• <b>V46.0.0.8 à V46.0.0.9 :</b> Amélioration de la détection d'usure de la batterie et audit/optimisation Windows Defender.
+</div>
 <div class="feature-grid">
-
 <div class="card">
-<h2>🧰 Gestion des Pilotes (Nouveau V50.0.0.3 – Gold uniquement)</h2>
+<h2>🧰 Gestion des Pilotes (Depuis V50.0.0.3 – Gold uniquement)</h2>
 <b>Module exclusif à l’Édition Gold.</b><br>
 Recherche des Mises à Jour des Pilotes via Windows Update.<br>
 Visualisation des Pilotes Installés via Windows Update.<br>
@@ -279,7 +250,6 @@ Nettoyage des Pilotes Obsolètes.<br>
 💬 Nouveauté Gold : trois fonctionnalités réunies dans un module dédié à la gestion des pilotes.
 </div>
 </div>
-
 <div class="card">
 <h2>📡 Gestion Wi-Fi (Nouveau V46)</h2>
 <b>Refonte complète des modules sans-fil.</b><br>
@@ -287,12 +257,10 @@ Afficher et Exporter ses mots de passe Wi-Fi.<br>
 Sauvegarde & Importation des Profils Réseau.<br>
 Prise en charge des SSID avec <b>Espaces</b>.<br>
 Suppression simplifiée de réseaux obsolètes.
-
 <div class="avis">
 💬 Avis utilisateur : La gestion des profils avec espaces fonctionne enfin parfaitement, un vrai gain de confort !
 </div>
 </div>
-
 <div class="card">
 <h2>🛡️ Sécurité & Antivirus</h2>
 Gestion avancée des certificats Secure Boot UEFI.<br>
@@ -300,12 +268,10 @@ Mise à Jour et Scan Complet Windows Defender.<br>
 Réinitialisation de la Sécurité Windows.<br>
 Environnement Sécurisé avec installation automatisée d'uBlock Origin.<br>
 <b>Signature RSA 2048-bit :</b> Certificat officiel Jeff77.
-
 <div class="avis">
 💬 Avis utilisateur : L'installation automatisée d'uBlock Origin rend la sécurisation encore plus intuitive, même sans navigateur tiers !
 </div>
 </div>
-
 <div class="card">
 <h2>🛠️️ Maintenance & Logs</h2>
 <b>Change Log :</b> Liste détaillée des modifications.<br>
@@ -313,12 +279,10 @@ Audit UEFI & Secure Boot 2023.<br>
 Installation / Mise à jour <b>PowerShell</b> & <b>Terminal</b>.<br>
 Popups automatiques en fin d'analyses SFC / DISM.<br>
 <b>Amélioré (V50.0.0.0) :</b> Nouveau module "Couleurs Interface" avec personnalisation par défaut (Fond Bleu Clair / Texte Blanc).
-
 <div class="avis">
 💬 Avis utilisateur : Le nouveau rendu visuel par défaut est très agréable et reposant pour les yeux.
 </div>
 </div>
-
 <div class="card">
 <h2>⚡ Réseau & Performance</h2>
 <b>Réparation Réseau optimisée.</b><br>
@@ -328,12 +292,10 @@ Gestion intelligente des adresses IP dynamiques et des matériels.<br>
 Migration globale vers des méthodes d'extraction alternatives suite à la suppression de WMIC.<br>
 Enrichissement global des infos matérielles (CPU, RAM, Disques, Cartes Vidéos avec résolution actuelle et modification).<br>
 <b>Diagnostics Système, Matériel et Électrique.</b>
-
 <div class="avis">
 💬 Avis utilisateur : La transition proactive vers de nouvelles méthodes d'extraction garantit une compatibilité parfaite sur tous les PC !
 </div>
 </div>
-
 <div class="card">
 <h2>🖱️ Menu Contextuel Avancé</h2>
 Modes et Options d'alimentation.<br>
@@ -341,56 +303,46 @@ Vider presse-papier & Coupure WiFi urgente.<br>
 Capture écran & vidéo.<br>
 Mode Dieu (God Mode).<br>
 Gestion des icônes du bureau.
-
 <div class="avis">
 💬 Avis utilisateur : Toutes les fonctions vitales de Windows sont à portée de clic droit.
 </div>
 </div>
-
 <div class="card">
 <h2>💾 Migration & Licence</h2>
 <b>Passage Famille vers Pro (sans ISO).</b><br>
 <b>Migrer vers W11 25H2, 26H2 ou Windows LTSC (avec ISO).</b><br>
 Durée : <b>120 Jours</b> (Gold) / <b>90 Jours</b> (Essai).<br>
-Mises à jour fréquentes des versions Gold.
-
+Mises à jour régulières des versions Gold et Essai.
 <div class="avis">
 💬 Avis utilisateur : Migrer de Famille vers Pro se fait en quelques minutes sans perdre de fichiers.
 </div>
 </div>
-
 </div>
-
 <div style="margin-top:40px;text-align:center;width:100%;">
 <h2>🚀 Zone de Téléchargement</h2>
 <a href="https://www.jeff77.fr/telecharger-essai-outils" class="btn btn-trial">
-⬇ Télécharger Version d'Essai V50.0.0.1
+⬇ Télécharger Version d'Essai V50.0.0.4
 </a>
-<p style="font-size: 0.8rem; color: #666;">Chaque version d'essai (bridée) est désormais valable 90 Jours.</p>
+<p style="font-size:0.8rem;color:#666;">Chaque version d'essai (bridée) est désormais valable 90 Jours.</p>
 </div>
-
 <div class="verdict">
 <div class="stars">★★★★★</div>
 <div class="score">20 / 20</div>
-<p>La V50.0.0.3 apporte de nouvelles améliorations ciblées et la stabilité maximale pour les membres Gold, avec le nouveau Module de Gestion des Pilotes : recherche des mises à jour via Windows Update, visualisation des pilotes installés via Windows Update et nettoyage des pilotes obsolètes (Gold uniquement).</p>
+<p>La V50.0.0.4, disponible en éditions Gold et Essai, améliore la fiabilité des Outils Windows grâce à la correction d'un risque de faux positif provoquant l'affichage injustifié du message « Accès refusé » dans le module de Mise à Jour des Logiciels (Winget), ainsi qu'à l'optimisation de la détection de présence d'une batterie pour éviter certains blocages ou ralentissements. Elle conserve toutes les fonctionnalités précédentes, notamment le Module de Gestion des Pilotes (Gold uniquement), permettant la recherche des mises à jour via Windows Update, la visualisation des pilotes installés et le nettoyage des pilotes obsolètes.</p>
 </div>
-
-<div style="text-align:center; width:100%;">
-    <a href="https://www.jeff77.fr/soutenir" class="btn btn-gold">
-    🏆 DEVENIR MEMBRE GOLD
-    </a>
-    <p style="font-size: 1.05rem; font-weight: bold; color: #333; margin-top: 10px;">ACCÈS COMPLET AU SITE</p>
-    <p style="font-size: 0.8rem; color: #666; margin-top: 5px; margin-bottom: 20px;">Chaque version Gold (V50.0.0.3), complète et non bridée, est désormais valable 120 Jours. Accès illimité aux Téléchargements. Pour les Membres Gold, téléchargez la dernière version dès qu'outils sort, sans limite.</p>
+<div style="text-align:center;width:100%;">
+<a href="https://www.jeff77.fr/soutenir" class="btn btn-gold">
+🏆 DEVENIR MEMBRE GOLD
+</a>
+<p style="font-size:1.05rem;font-weight:bold;color:#333;margin-top:10px;">ACCÈS COMPLET AU SITE</p>
+<p style="font-size:0.8rem;color:#666;margin-top:5px;margin-bottom:20px;">Chaque version Gold (V50.0.0.4), complète et non bridée, est désormais valable 120 Jours. Accès illimité aux Téléchargements. Pour les Membres Gold, téléchargez chaque nouvelle version dès sa sortie, sans limite.</p>
 </div>
-
 <div class="footer-site-link">
-    <a href="https://www.jeff77.fr/" target="_blank">🌐 Accéder au site officiel : www.jeff77.fr</a>
+<a href="https://www.jeff77.fr/" target="_blank">🌐 Accéder au site officiel : www.jeff77.fr</a>
 </div>
-
 <div class="footer">
-© 2026 Jeff77 Tech • Solution portable signée numériquement • V50.0.0.3
+© 2026 Jeff77 Tech • Solution portable signée numériquement • V50.0.0.4
 </div>
-
 </div>
 </body>
 </html>
